@@ -1,3 +1,4 @@
+[EAGLE Schematic and Board.zip](https://github.com/vk2cz/Yaesu-Keyer/files/7992164/EAGLE.Schematic.and.Board.zip)
 # Yaesu FT902 PBP Iambic Keyer
 Morse code iambic keyer for Yaesu FT-901 FT901D FT901DM /  FT-902 FT902D FT902DM ham radios.
 
