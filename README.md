@@ -1,4 +1,4 @@
-# Yaesu-Keyer
+# Yaesu FT902 PBP Iambic Keyer
 Morse code iambic keyer for Yaesu FT-901 FT901D FT901DM /  FT-902 FT902D FT902DM ham radios.
 
 ## Background
@@ -31,8 +31,8 @@ Total budget for DIY approx AUD$7.50
 ## Software Flowchart
 
 The program utilises the interupt register for the 2 digital input pins (ie not the hardware interupt).
-The analog input is a A/D which reads the input volts from the FT902D front panel potentiometer on a 0 to 5v scale (0 to 255) in Byte value.
-The digital 12F683 output drives a basic NPN transistor to key the transmitter. This was to isolate the 12F683 from the radios 12v realy keying voltage, and associated keying current which is over the PIC output pin capabilities.
+The analog input is a A/D which reads the input volts from the FT902D front panel potentiometer on a 0 to 5v scale (0 to 255 in Byte value).
+The digital 12F683 output drives a basic NPN transistor to key the transmitter. This was to isolate the 12F683 from the radios 12v relay keying voltage, and associated keying current which is over the PIC output pin capabilities.
 
 To avoid the 12F683 stalling with lengthy pause commands, the morse dots, dashes and associated spaces are generated in DO WHILE loops, with approx 600uS pauses. This allows the interupt register to queue the next character while the keyer is still sending the current character.
 
